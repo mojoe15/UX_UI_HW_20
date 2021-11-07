@@ -6,6 +6,7 @@ $("#dark-mode").click(function () {
     if ($("#dark-mode").text() === "Dark Mode") {
         $("#dark-mode").text("Light Mode");
         $(".hero").css("background-color", "rgb(53,48,42)");
+        $(".about-me-hero").css("background-color", "rgb(53,48,42)");
         $("*").css("color", "rgb(252, 251, 240)");
         $(".btn").css("background", "transparent");
         $(".btn").css("color", "#c0c09e");
@@ -25,6 +26,7 @@ $("#dark-mode").click(function () {
     } else {
         $("#dark-mode").text("Dark Mode");
         $(".hero").css("background-color", "inherit");
+        $(".about-me-hero").css("background-color", "inherit");
         $("*").css("color", "rgb(95, 97, 90)");
         $(".btn").css("background", "");
         $(".btn").css("color", "");
@@ -38,8 +40,9 @@ $("#dark-mode").click(function () {
                 $(this).css("background", "");
             }
         );
-        $(".contact-me").css("background-color", "#050403");
-        $(".contact-me input").css("background-color", "#111010");
-        $(".contact-me textarea").css("background-color", "#111010");
+        $(".contact-me").css("background-color", "rgb(241, 230, 217)");
+        $(".contact-me input").css("background-color", "#fff");
+        $(".contact-me textarea").css("background-color", "#fff");
+        $(".contact-me .btn").css("background-color", "#c0c09e");
     }
 });
